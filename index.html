@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance Website</title>
+    <!-- style -->
+    <link rel="stylesheet" href="./Styles/index.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <a href="#" id="logoLink"><img src="./assetts/logo.svg" /></a>
+      </div>
+      <div class="links">
+        <a href="#about">About Us</a>
+        <a href="#regulation">Regulation</a>
+        <a href="#exchange">Exchange Integration</a>
+        <a href="#products">Products</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="Account-Container">
+        <a href="#" class="icon-link" id="loginLink"
+          ><i
+            style="color: #22c55e; font-size: 25px"
+            class="fas fa-sign-in-alt"
+          ></i
+        ></a>
+        <a href="#" class="icon-link" id="signupLink"
+          ><i
+            style="color: #22c55e; font-size: 25px"
+            class="fas fa-user-plus"
+          ></i
+        ></a>
+      </div>
+      <!-- Menu icon for small screens -->
+      <div class="menu-icon" id="menuIcon">
+        <i style="color: white; font-size: 25px" class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <!-- login Modal -->
+    <div id="loginModal" class="modal">
+      <div class="modal-background">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="form-container">
+            <h1>Login</h1>
+            <form class="form">
+              <input
+                type="text"
+                class="textfilled"
+                placeholder=" Username"
+                required
+              />
+              <input
+                type="password"
+                class="textfilled"
+                placeholder=" Password"
+                required
+              />
+
+              <button type="submit" class="submit-button">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- signup modal -->
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="form-container">
+          <h1>Signup</h1>
+          <form class="form">
+            <input
+              type="text"
+              class="textfilled"
+              placeholder=" Username"
+              required
+            />
+            <input
+              type="email"
+              class="textfilled"
+              placeholder=" Email"
+              required
+            />
+            <input
+              type="password"
+              class="textfilled"
+              placeholder=" Password"
+              required
+            />
+            <input
+              type="password"
+              class="textfilled"
+              placeholder=" Confirm Password"
+              required
+            />
+
+            <button type="submit" class="submit-button">Signup</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- header -->
+    <div class="header" id="about">
+      <div class="header-left-section">
+        <h1>Freedom Finance <span class="Technologies">Technologies</span></h1>
+        <p>
+          Freedom Finance Technologies Ltd. is a multinational team that
+          develops tech solutions and infrastructure for all clients and
+          employees of Freedom Holding Corp.
+        </p>
+      </div>
+      <div class="header-right-section">
+        <img src="./assetts/hero-img.png" alt="" />
+      </div>
+    </div>
+
+    <!-- second section -->
+    <div class="Freedom">
+      <div class="Freedom-left-section">
+        <img src="./assetts/freedom.png" alt="" />
+      </div>
+      <div class="Freedom-right-section">
+        <h1>Freedom Holding Corp.</h1>
+        <p>
+          Freedom Holding Corp is an international investment holding company
+          catering to over 230,000 clients in the US, Europe, and Central Asia
+          under the Freedom Finance brand.
+        </p>
+        <p>
+          Freedom Holding stock has been traded on the Nasdaq stock exchange
+          since October 2019 under the ticker FRHC. As of June 2023, the
+          holding's market cap exceeds $5B.
+        </p>
+      </div>
+    </div>
+
+    <!-- regulation -->
+    <div class="regulation" id="regulation">
+      <div class="regulation-left-section">
+        <h1>Regulation</h1>
+        <p>
+          Freedom Holding is regulated by the US's Securities and Exchange
+          Commission (SEC). The EU division is licensed by the Cyprus Securities
+          and Exchange Commission (CySEC).
+        </p>
+      </div>
+      <div class="regulation-right-section">
+        <img src="./assetts/regulation.png" alt="" />
+      </div>
+    </div>
+    <!-- exchange integration -->
+
+    <div class="Integration" id="exchange">
+      <div class="Integration-left-section">
+        <img src="./assetts/integration.png" alt="" />
+      </div>
+      <div class="Integration-right-section">
+        <h1>Exchange Integration</h1>
+        <p>
+          Our team has extensive experience in integration with the leading
+          stock exchanges in the US, Europe, and Asia, which include:
+        </p>
+        <ul>
+          <li>NYSE, Nasdaq, CBOE, CME, AMEX</li>
+          <li>LSE, Deutsche Börse</li>
+          <li>HKEX</li>
+          <li>KASE (Kazakhstan)</li>
+          <li>Ukrainian Stock Exchange</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- tradenet -->
+    <div class="Tradenet" id="products">
+      <div class="Tradenet-left-section">
+        <img src="./assetts/tradernet.png" alt="" />
+      </div>
+      <div class="Tradenet-right-section">
+        <h1>Tradernet</h1>
+        <p>
+          Tradernet supplies brokerage services through a web trading platform
+          and mobile apps, a CRM system, back-end tools, exchange gateways, and
+          APIs for integration with websites, payment systems and automated
+          KYC/AML systems.
+        </p>
+        <p>
+          Tradernet users can trade 40,000 financial instruments across various
+          asset classes: stocks, ETFs, futures, options, and bonds.
+        </p>
+        <button class="button">Tradernet.com</button>
+      </div>
+    </div>
+    <!-- mobile app -->
+    <div class="mobile">
+      <div class="mobile-left-section">
+        <h1>Mobile Apps</h1>
+        <p>
+          Tradernet and Freedom24 apps for Android, iOS, and Huawei enable
+          opening an investment account with Freedom Finance, buying and selling
+          stocks, and submitting applications to trade IPOs.
+        </p>
+
+        <div class="btn-container">
+          <button class="button">F24 IOS</button>
+          <button class="button">F24 Android</button>
+        </div>
+      </div>
+      <div class="mobile-right-section">
+        <img src="./assetts/regulation.png" alt="" />
+      </div>
+    </div>
+    <!-- Team -->
+
+    <h1 class="team-header" id="team">Our Team</h1>
+    <div class="team-container">
+      <div class="team-card">
+        <img src="./assetts/img1.jpg" />
+        <p>Denis Matafonov</p>
+        <span>Executive Director</span>
+      </div>
+      <div class="team-card">
+        <img src="./assetts/img2.jpg" />
+        <p>Anton Beydulaev</p>
+        <span>Operational Director</span>
+      </div>
+      <div class="team-card">
+        <img src="./assetts/img3.jpg" />
+        <p>Andrey Sazontev</p>
+        <span>Chief Information Officer</span>
+      </div>
+      <div class="team-card">
+        <img src="./assetts/img4.jpg" />
+        <p>Alexander Fedyaev</p>
+        <span>Director of Banking Products Development</span>
+      </div>
+      <div class="team-card">
+        <img src="./assetts/img5.jpg" />
+        <p>Brylyakov Sergey</p>
+        <span>Head of Backend Development TN & Bank</span>
+      </div>
+      <div class="team-card">
+        <img src="./assetts/img6.jpg" />
+        <p>Yurii Kondratiuk</p>
+        <span>Head of Billing System Development</span>
+      </div>
+      <div class="team-card">
+        <img src="./assetts/img1.jpg" />
+        <p>Andrii Mukhopadov</p>
+        <span>Senior Project - Product Manager</span>
+      </div>
+      <div class="team-card">
+        <img src="./assetts/img2.jpg" />
+        <p>Ilia Sidash</p>
+        <span>Head of Frontend Development</span>
+      </div>
+      <div class="team-card">
+        <img src="./assetts/img3.jpg" />
+        <p>Yurii Dettsel</p>
+        <span>Head of Tech Support - Infrastructure</span>
+      </div>
+    </div>
+
+    <!-- contact form -->
+    <div class="contact" id="contact">
+      <h1>Become a Partner</h1>
+      <p>
+        To become a partner of Freedom Finance Technologies Ltd., please fill
+        out this form:
+      </p>
+
+      <form class="contact-form">
+        <div class="row">
+          <div class="col">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Your first name..."
+            />
+          </div>
+          <div class="col">
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Your last name..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="company">Company Name</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Your company name..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Your phone number..."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <button type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer-container">
+      <div class="footer-left-section">
+        <p>Freedom Finance Technologies Ltd.</p>
+        <span
+          >Agiou Ioanni 2, Valentino Business Center Germasogeia, 4045,
+          Limassol, Cyprus</span
+        >
+        <span>© 2011-2024 Freedom Holding Corp. - All right reserved</span>
+      </div>
+      <div class="footer-right-section">
+        <span>tel: +357 2525 7787, fax: +357 2525 7786</span>
+        <a
+          href="mailto:info@example.com?subject=Subject%20Here&body=Body%20Here"
+          >info@ffintech.com</a
+        >
+      </div>
+    </div>
+
+    <!-- All Script -->
+    <script>
+      var loginModal = document.getElementById("loginModal");
+      var signupModal = document.getElementById("signupModal");
+
+      var loginLink = document.getElementById("loginLink");
+      var signupLink = document.getElementById("signupLink");
+
+      loginLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        loginModal.style.display = "block";
+      });
+
+      signupLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        signupModal.style.display = "block";
+      });
+
+      document.querySelectorAll(".close").forEach(function (element) {
+        element.addEventListener("click", function () {
+          loginModal.style.display = "none";
+          signupModal.style.display = "none";
+        });
+      });
+    </script>
+
+    <!-- JavaScript for menu toggle -->
+    <script>
+      var loginModal = document.getElementById("loginModal");
+      var signupModal = document.getElementById("signupModal");
+      var menuIcon = document.getElementById("menuIcon");
+      var links = document.getElementById("links");
+
+      var loginLink = document.getElementById("loginLink");
+      var signupLink = document.getElementById("signupLink");
+
+      loginLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        loginModal.style.display = "block";
+      });
+
+      signupLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        signupModal.style.display = "block";
+      });
+
+      document.querySelectorAll(".close").forEach(function (element) {
+        element.addEventListener("click", function () {
+          loginModal.style.display = "none";
+          signupModal.style.display = "none";
+        });
+      });
+
+      var links = document.querySelector(".links");
+
+      menuIcon.addEventListener("click", function () {
+        links.classList.toggle("show-links");
+      });
+    </script>
+
+    <script>
+      var logoLink = document.getElementById("logoLink");
+
+      logoLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <script>
+      var navbar = document.getElementById("navbar");
+
+      var navbarOffset = navbar.offsetTop;
+
+      function adjustNavbarPosition() {
+        if (window.pageYOffset >= navbarOffset) {
+          navbar.classList.add("fixed-navbar");
+        } else {
+          navbar.classList.remove("fixed-navbar");
+        }
+      }
+
+      window.addEventListener("scroll", adjustNavbarPosition);
+    </script>
+  </body>
+</html>
